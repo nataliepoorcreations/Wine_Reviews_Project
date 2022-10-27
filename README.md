@@ -1,5 +1,5 @@
 # Wine_Reviews_Project
-![grapes-wine_00387941_1200x@2x](https://user-images.githubusercontent.com/106033535/198412054-a4bcbfe2-71ae-4fea-9c2e-7ae29795015c.jpeg)
+![grape-and-wine](https://user-images.githubusercontent.com/106033535/198412216-7ff44c76-a60a-423e-9086-b76989293e3d.jpeg)
 
 
 * Square - Natalie
