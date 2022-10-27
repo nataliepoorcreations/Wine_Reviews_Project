@@ -1,4 +1,6 @@
 # Wine_Reviews_Project
+![grapes-wine_00387941_1200x@2x](https://user-images.githubusercontent.com/106033535/198412054-a4bcbfe2-71ae-4fea-9c2e-7ae29795015c.jpeg)
+
 
 * Square - Natalie
 * Triangle - Mary Cate
