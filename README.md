@@ -10,9 +10,10 @@
 ## Communication Protocall
 We have been comminicating regularly on Slack and weekend group zooms to collaborate. 
 
-Reason for choosing data set: We all love wine and people are constantly asking recomendations for wine and we want to create a website where one can put in some specifications and be provided with a few options.
+## Reason for choosing data set:
+We all love wine and people are constantly asking recomendations for wine and we want to create a website where one can put in some specifications and be provided with a few options.
 
-Questions:
+## Questions:
 1. What is the biggest impact to the quality point rating? ex... region, variety, or taste descriptions.
 2. Could our machine learning apply while scraping a couple wine based websites?
 3. What's the relationship between the price point and the quality point ratings?
