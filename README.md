@@ -2,10 +2,10 @@
 ![grape-and-wine](https://user-images.githubusercontent.com/106033535/198412216-7ff44c76-a60a-423e-9086-b76989293e3d.jpeg)
 
 
-* Square - Natalie
-* Triangle - Mary Cate
-* Circle - Maria
-* X - Niki
+* Repository - Natalie
+* Machine Learning - Mary Cate
+* Database - Maria
+* Technology - Niki
 
 Reason for choosing data set: We all love wine and people are constantly asking recomendations for wine and we want to create a website where one can put in some specifications and be provided with a few options.
 
