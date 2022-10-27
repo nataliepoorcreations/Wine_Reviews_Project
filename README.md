@@ -17,7 +17,8 @@ Questions:
 
 
 ## Machine Learning Module
-Read in dataset. Temporarily using csv but will convert to database.
+* Takes in data in from the provisional database. Temporarily using csv but will convert to database.
+* Outputs label(s) for input data.
 
 <img width="1083" alt="Screen Shot 2022-10-27 at 6 13 57 PM" src="https://user-images.githubusercontent.com/106033535/198408258-68e26abc-9017-4d52-a24c-8026c337aa0e.png">
 
@@ -26,4 +27,6 @@ Split Data into Training and Testing
 <img width="251" alt="Screen Shot 2022-10-27 at 6 24 40 PM" src="https://user-images.githubusercontent.com/106033535/198409605-51983eae-8071-4180-afc5-a2ea5db36a5b.png">
 
 
-
+## Database Module
+* Sample data that mimics the expected final database structure or schema
+* Draft machine learning module is connected to the provisional database
