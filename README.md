@@ -12,3 +12,9 @@ Questions:
 1. Can we use natural language to convert the descriptions of the wines?
 2. Can we use machine learning to do grouping?
 3. Can we create an html to provide a user an easy format to find a few wine suggestions?
+
+
+## Machine Learning Module
+Read in dataset. Temporarily using csv but will convert to database.
+
+<img width="1083" alt="Screen Shot 2022-10-27 at 6 13 57 PM" src="https://user-images.githubusercontent.com/106033535/198408258-68e26abc-9017-4d52-a24c-8026c337aa0e.png">
