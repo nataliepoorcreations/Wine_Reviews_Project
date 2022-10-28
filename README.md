@@ -32,3 +32,7 @@ Split Data into Training and Testing
 ## Database Module
 * Sample data that mimics the expected final database structure or schema
 * Draft machine learning module is connected to the provisional database
+
+
+<img width="481" alt="Screen Shot 2022-10-28 at 7 03 26 PM" src="https://user-images.githubusercontent.com/106033535/198748628-fb7c796e-9abb-4d47-a3bb-b828e2f68ceb.png">
+
