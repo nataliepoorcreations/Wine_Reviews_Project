@@ -1,18 +1,11 @@
 DROP TABLE Wine_DB
 -- Original csv file database table
 CREATE TABLE Wine_DB (
-	country varchar NOT NULL,
-	description text NOT NULL,
-	designation varchar,
-	points int NOT NULL,
-	price float NOT NULL ,
-	province varchar,
-	region_1 varchar,
-	region_2 varchar, 
-	variety varchar NOT NULL,
-	winery varchar
-
-);
+	country varchar ,
+	description text  ,
+	points int ,
+	price float  ,
+ 	variety varchar  );
 
 SELECT * FROM wine_db;
 
