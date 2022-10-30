@@ -29,6 +29,10 @@ Split Data into Training and Testing
 
 <img width="251" alt="Screen Shot 2022-10-27 at 6 24 40 PM" src="https://user-images.githubusercontent.com/106033535/198409605-51983eae-8071-4180-afc5-a2ea5db36a5b.png">
 
+Dropped unnesecary collumns to clean up dataset.
+
+<img width="865" alt="Screen Shot 2022-10-30 at 2 39 47 PM" src="https://user-images.githubusercontent.com/106033535/198895868-3edfece1-2bf4-40c5-abac-844f3d441b38.png">
+
 
 ## Database Module
 * Sample data that mimics the expected final database structure or schema
