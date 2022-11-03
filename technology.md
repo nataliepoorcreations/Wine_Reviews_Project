@@ -10,4 +10,4 @@ Using SQL to create the schema that will mimic our final database structure.
 Will use Machine Learning to assit consumers in predicting wines they will be interested in trying based on their prefrences. 
 
 ## Dashboard
-Will use JavaScript to display information in an eye pleasing and user friendly HTML page. Will use Tableau to create visualizations for the wine data. 
+Will use JavaScript to display information in an eye pleasing and user friendly HTML page. Will use Tableau to create visualizations for the wine data. Our group presentation will use Google Slides to visualize the wine data in an easy to understand format, we will add the link to our html site so the the webpage can be easily refrenced during the presentation.  Interactive elements will include be able to discover wines based on type, location, price, and ratings. 
