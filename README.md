@@ -22,6 +22,7 @@ We all love wine and people are constantly asking recomendations for wine and we
 ## Machine Learning Module
 * Takes in data in from the provisional database. Temporarily using csv but will convert to database.
 * Outputs label(s) for input data.
+* Aassit consumers in predicting wines they will be interested in trying based on their prefrences.
 
 <img width="1083" alt="Screen Shot 2022-10-27 at 6 13 57 PM" src="https://user-images.githubusercontent.com/106033535/198408258-68e26abc-9017-4d52-a24c-8026c337aa0e.png">
 
@@ -37,7 +38,15 @@ Dropped unnesecary collumns to clean up dataset.
 ## Database Module
 * Sample data that mimics the expected final database structure or schema
 * Draft machine learning module is connected to the provisional database
+* Data will be cleaned into a database that will display the inforamtion in an easy to read format. 
+* Using webscraping to gather data from Vinio.com for additional wine data.
 
 
 <img width="481" alt="Screen Shot 2022-10-28 at 7 03 26 PM" src="https://user-images.githubusercontent.com/106033535/198748628-fb7c796e-9abb-4d47-a3bb-b828e2f68ceb.png">
 
+
+## Dashboard
+* Using JavaScript to display information in an eye pleasing and user friendly HTML page. 
+* Using Tableau to create visualizations for the wine data. 
+* Group presentation will use Google Slides to visualize the wine data in an easy to understand format, we will add the link to our html site so the the webpage can be easily referenced during the presentation. 
+* Interactive elements will including being able to discover wines based on type, location, price, and ratings.
