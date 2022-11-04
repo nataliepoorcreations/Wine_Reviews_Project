@@ -8,7 +8,7 @@
 * Database - Maria
 * Technology - Niki
 
-## Communication Protocall
+## Communication Protocol
 We have been comminicating regularly on Slack and weekend group zooms to collaborate. 
 
 ## Reason for choosing data set:
