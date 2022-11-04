@@ -22,7 +22,7 @@ We all love wine and people are constantly asking recomendations for wine and we
 ## Machine Learning Module
 * Takes in data in from the provisional database. Temporarily using csv but will convert to database.
 * Outputs label(s) for input data.
-* Aassit consumers in predicting wines they will be interested in trying based on their prefrences.
+* Assist consumers in predicting wines they will be interested in trying based on their preferences.
 
 <img width="1083" alt="Screen Shot 2022-10-27 at 6 13 57 PM" src="https://user-images.githubusercontent.com/106033535/198408258-68e26abc-9017-4d52-a24c-8026c337aa0e.png">
 
