@@ -8,18 +8,28 @@ CREATE TABLE Wine_DB (
  	variety varchar  );
 
 SELECT * FROM wine_db;
+DROP TABLE json_db;
+-- Create table with json csv
+CREATE TABLE json_db (
+	points int,
+	title varchar,
+	description text,
+	price float,
+	variety varchar,
+	country varchar
+);
 
--- create  new table with only country, points and variety 
-SELECT country, points, variety
-FROM Wine_DB
-INTO Country_of_Origin ;
+SELECT * FROM json_db;
 
--- Create new table with only price, points, and variety
-SELECT price, points, variety
-FROM Wine_DB
-INTO Wine_Price ;
+-- right join on variety and country 
+SELECT j.title,
+	w.description,
+	w.points,
+	w.price
+INTO joined_db
+FROM json_db AS j
+INNER JOIN wine_db AS w
+ON w.variety=j.variety AND w.country=j.country;
 
--- Create new table with only description, points, and variety
-SELECT description, points, variety
-FROM Wine_DB
-INTO Country_of_Origin ;
+
+
