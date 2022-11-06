@@ -26,6 +26,10 @@ SELECT j.title,
 	w.description,
 	w.points,
 	w.price
+INTO joined_db
 FROM json_db AS j
 INNER JOIN wine_db AS w
 ON w.variety=j.variety AND w.country=j.country;
+
+
+
