@@ -8,6 +8,10 @@
 * Database - Maria
 * Technology - Niki
 
+## Presentation
+Beginning phase of presentation:
+https://docs.google.com/presentation/d/14j0dBZNphSkz41oo3Oreq9Ry4PKfyBq4h4J1nzI_lcM/edit?usp=sharing
+
 ## Communication Protocol
 We have been comminicating regularly on Slack and weekend group zooms to collaborate. 
 
