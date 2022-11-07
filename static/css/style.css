@@ -1,0 +1,11 @@
+/* css style sheet */ 
+body {
+    color: #0e0d0d;
+}
+
+
+.jumbotron {
+  background-image: url("../images/cover_pic.jpeg");
+  background-size: 100% 100%;
+  text-align: center;
+}
