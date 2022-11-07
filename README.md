@@ -22,17 +22,38 @@ We all love wine and people are constantly asking recomendations for wine and we
 ## Machine Learning Module
 * Takes in data in from the provisional database. Temporarily using csv but will convert to database.
 * Outputs label(s) for input data.
-* Aassit consumers in predicting wines they will be interested in trying based on their prefrences.
+* Assist consumers in predicting wines they will be interested in trying based on their preferences.
 
 <img width="1083" alt="Screen Shot 2022-10-27 at 6 13 57 PM" src="https://user-images.githubusercontent.com/106033535/198408258-68e26abc-9017-4d52-a24c-8026c337aa0e.png">
 
-Split Data into Training and Testing
+* **Description for Preliminary Data Preprocessing:** 
 
-<img width="251" alt="Screen Shot 2022-10-27 at 6 24 40 PM" src="https://user-images.githubusercontent.com/106033535/198409605-51983eae-8071-4180-afc5-a2ea5db36a5b.png">
+In order to use the wine description data in a machine learning model, the strings needed to be converted into an integer format. The decision was made to pull out popular keywords from the wines and then use the count of the popular keywords as the integer in the model. An assumption was made that the lengthier and more "buzzwordy" descriptions appeared to have higher ratings and were overall more positive. This was done by first removing any of the filler words and very common descriptors that do not add taste information. Those words included the "stop words" library and the additional words below.
 
-Dropped unnesecary collumns to clean up dataset.
+![image](https://user-images.githubusercontent.com/105991478/200196010-5d6242eb-7e0f-407b-815b-07f7f9bdf933.png)
 
-<img width="865" alt="Screen Shot 2022-10-30 at 2 39 47 PM" src="https://user-images.githubusercontent.com/106033535/198895868-3edfece1-2bf4-40c5-abac-844f3d441b38.png">
+After removing those words using a for loop and the WordNetLemmantizer, a series was created by splitting out the individual words and counting the number of occurrences. The top 40 words were used. This value came from trial and error and a review of the dataset. More that the top 40 keywords did not seem to add additional descriptive value. 
+
+![image](https://user-images.githubusercontent.com/105991478/200196191-0e650e58-3d76-4d24-89de-cef6941d4ed4.png)
+
+* **Description of preliminary feature engineering and preliminary feature selection:**
+
+In this model, the goal is to predict the quality rating based on the factors given in the dataset. Primarly the keyword count, the price, the country and the variety were included. The region and winery were excluded because there were too many unique values to develop patterns, and the conversion to integer values using _get dummies_ would have resulted in too large of a dataframe. The dataframe prior to using _get dummies_ to covert the country and variety columns is as follows: 
+
+![image](https://user-images.githubusercontent.com/105991478/200196692-97b64a30-d00a-4c13-9845-16c9ebbc4456.png)
+
+
+* **Split Data into Training and Testing:**
+
+The y data set is the point information, which is what we are trying to predict. the X dataset are the keyword counts, price, country and wine variety converted into integer format. 
+
+![image](https://user-images.githubusercontent.com/105991478/200196749-c30bcac9-bcb3-4349-92ac-b9e33bcb4a0a.png)
+
+* **Explanation of model choice**
+
+The first model selected is the Balanced Random Forest Classifier model. This model was selected because it serves the purpose for grouping better than a regression model. However, it appears that based on the imbalanced classification report, the precision is quite low. The model is also helpful to determine the important features. It appears that the price and keyword count have a larger impact than the variety of the wine. We will re-create this model without the variety variable as well as try a couple other grouping models to find a better fit. 
+
+![image](https://user-images.githubusercontent.com/105991478/200197020-e75cf7d8-6dcb-4730-b1e1-7c445b6d561e.png)
 
 
 ## Database Module
@@ -49,4 +70,4 @@ Dropped unnesecary collumns to clean up dataset.
 * Using JavaScript to display information in an eye pleasing and user friendly HTML page. 
 * Using Tableau to create visualizations for the wine data. 
 * Group presentation will use Google Slides to visualize the wine data in an easy to understand format, we will add the link to our html site so the the webpage can be easily referenced during the presentation. 
-* Interactive elements will including being able to discover wines based on type, location, price, and ratings.
+* Interactive elements will include being able to discover wines based on type, location, price, and ratings.
