@@ -77,7 +77,7 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
     ![cleaning_data_2](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/clean_data_2.png)
 
     Connection String
-    ![connection]()
+    ![connection](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/connection_string.png)
 
     Wine Database 
     ![wine_db]()
