@@ -88,7 +88,7 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
      ![sql](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/Join_sql.png)
 
      Joined Database Output
-     ![joined_db]()
+     ![joined_db](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/JOINED_DB.png)
 
 ## Dashboard
 * Using JavaScript to display information in an eye pleasing and user friendly HTML page. 
