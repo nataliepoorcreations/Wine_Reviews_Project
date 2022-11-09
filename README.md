@@ -65,14 +65,30 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
 
 
 ## Database Module
-* Sample data that mimics the expected final database structure or schema
-* Draft machine learning module is connected to the provisional database
-* Data will be cleaned into a database that will display the inforamtion in an easy to read format. 
-* Using webscraping to gather data from Vinio.com for additional wine data.
-
+* In order to organize our database, and ERD model was create to better visualize our final database. We had to establish which columns were necessary, and what other data could be ommitted for the purpose of our project in order to create our new filtered database. The outline of our database is seen in the picture below.
 
 <img width="481" alt="Screen Shot 2022-10-28 at 7 03 26 PM" src="https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/main/QuickDBD-export%20(1).png">
 
+* For the connection string SQLAlchemy was used to connect to postgres. The data was cleaned by removing unnecessary columns and making sure we had no null values in our data, this was done before it was loaded into postgress. The process can be seen below and this can also be fully seen in the file named wine_sqlalchemy.ipynb.
+  * This connection created two databases that will be joined using SQL. 
+
+Cleaning Data Process
+![cleaning_data_1]()
+![cleaning_data_1]()
+
+Connection String
+![connection]()
+
+Wine Database 
+![wine_db]()
+
+* For our joined database, a SQL query was used to create this new database which would link the wine name from the JSON file to our wine database. This can be seen in the query below along with the joined database. For a better visual please see joined_db.csv.zip file.
+
+SQL Query
+![sql]()
+
+Joined Database Output
+![joined_db]()
 
 ## Dashboard
 * Using JavaScript to display information in an eye pleasing and user friendly HTML page. 
