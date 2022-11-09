@@ -85,7 +85,7 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
 * For our joined database, a SQL query was used to create this new database which would link the wine name from the JSON file to our wine database. This can be seen in the query below along with the joined database. For a better visual please see joined_db.csv.zip file.
 
      SQL Query
-     ![sql]()
+     ![sql](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/Join_sql.png)
 
      Joined Database Output
      ![joined_db]()
