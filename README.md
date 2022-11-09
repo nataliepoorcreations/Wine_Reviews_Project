@@ -2,18 +2,16 @@
 # Wine_Reviews_Project
 ![grape-and-wine](https://user-images.githubusercontent.com/106033535/198412216-7ff44c76-a60a-423e-9086-b76989293e3d.jpeg)
 
-
+## Team Members-Roles
 * Repository - Natalie
 * Machine Learning - Mary Cate
 * Database - Maria
 * Technology - Niki
 
 ## Presentation
-Beginning phase of presentation:
-https://docs.google.com/presentation/d/14j0dBZNphSkz41oo3Oreq9Ry4PKfyBq4h4J1nzI_lcM/edit?usp=sharing
+Download presentation: [Google Slide Presentation](https://docs.google.com/presentation/d/14j0dBZNphSkz41oo3Oreq9Ry4PKfyBq4h4J1nzI_lcM/edit?usp=sharing)
 
-Tableau: 
-https://public.tableau.com/app/profile/nicole.phillips8398/viz/Wine_Reviews_16678657358970/WorldMap?publish=yes
+Download Tableau: [Tableau](https://public.tableau.com/app/profile/nicole.phillips8398/viz/Wine_Reviews_16678657358970/WorldMap?publish=yes)
 
 
 ## Communication Protocol
