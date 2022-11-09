@@ -12,6 +12,10 @@
 Beginning phase of presentation:
 https://docs.google.com/presentation/d/14j0dBZNphSkz41oo3Oreq9Ry4PKfyBq4h4J1nzI_lcM/edit?usp=sharing
 
+Tableau: 
+https://public.tableau.com/app/profile/nicole.phillips8398/viz/Wine_Reviews_16678657358970/WorldMap?publish=yes
+
+
 ## Communication Protocol
 We have been comminicating regularly on Slack and weekend group zooms to collaborate. 
 
