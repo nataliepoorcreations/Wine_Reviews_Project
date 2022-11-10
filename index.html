@@ -10,32 +10,83 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <!--link to css style sheet-->
-        <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
 </head>
 
 <body>
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg">
-            <p class="text-dark">Wine Reviews (or link to our GitHub Repo)</p>
-
             <a class="navbar-brand" href="index.html">Wine Reviews</a>
 
         </nav>
     </div>
     <div class="jumbotron">
         <h1>How to Pick Your Next Bottle</h1>
-      </div>
-      <div class="container-fluid">
+    </div>
+    <div class="container-fluid">
         <div class="row">
         </div>
-    </div>
 
-<!-- links to js for d3, app.js, data.js-->
+        <!-- start of filter and table -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- filter -->
+                <div class="col-md-3">
+                    <form class="#bg-white">
+                        <p>Filter Search</p>
+                        <ul class="list-group">
+                            <!-- first list item -->
+                            <li class="list-group-item bg-white">
+                                <label for="Year">Enter a Year</label>
+                                <input type="text" placeholder="YYYY" id="Year" />
+                            </li>
+                            <!-- country filter -->
+                            <li class="list-group-item bg-white">
+                                <label for="country">Enter a Country</label>
+                                <input type="text" placeholder="US" id="country" />
+                            </li>
+                            <!-- variety filter -->
+                            <li class="list-group-item bg-white">
+                                <label for="Varietal">Enter a Varietal</label>
+                                <input type="text" placeholder="Cabernet Sauvignon" id="Varietal" />
+                            </li>
+                            <!-- price filter -->
+                            <li class="list-group-item bg-white">
+                                <label for="price">Enter a Price</label>
+                                <input type="text" placeholder="$20" id="Price" />
+                            </li>
+                            <!-- shape filter -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-<script src="static/js/data.js"></script>
-<script src="static/js/app.js"></script>
+
+
+                            </li>-->
+                        </ul>
+                    </form>
+                </div>
+
+                <!-- table -->
+                <div class="col-md-9">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Country</th>
+                                <th>Varital</th>
+                                <th>Comments</th>
+                                <th>Points</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <!-- links to js for d3, app.js, data.js-->
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+                <script src="static/js/data.js"></script>
+                <script src="static/js/app.js"></script>
 </body>
 
 </html>

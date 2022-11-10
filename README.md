@@ -95,4 +95,3 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
 * Interactive elements will include being able to discover wines based on type, location, price, and ratings.
 
 
-<img width="1371" alt="Screen Shot 2022-11-08 at 7 35 03 PM" src="https://user-images.githubusercontent.com/106033535/200710138-b6b2e56f-abae-46ae-b944-92e06198f04b.png">
