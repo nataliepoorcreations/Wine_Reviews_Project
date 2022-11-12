@@ -1,4 +1,3 @@
-
 # Wine_Reviews_Project
 ![grape-and-wine](https://user-images.githubusercontent.com/106033535/198412216-7ff44c76-a60a-423e-9086-b76989293e3d.jpeg)
 
