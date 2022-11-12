@@ -3,10 +3,10 @@
 ![grape-and-wine](https://user-images.githubusercontent.com/106033535/198412216-7ff44c76-a60a-423e-9086-b76989293e3d.jpeg)
 
 ## Team Members-Roles
-* Repository - Natalie
-* Machine Learning - Mary Cate
-* Database - Maria
-* Technology - Niki
+* Repository and Presentation - [Natalie](https://github.com/nataliepoorcreations)
+* Machine Learning - [Mary Cate](https://github.com/MCRobish)
+* Database - [Maria](https://github.com/Mparra14)
+* Technology - [Niki](https://github.com/NikiNoel)
 
 ## Presentation
 Download presentation: [Google Slide Presentation](https://docs.google.com/presentation/d/14j0dBZNphSkz41oo3Oreq9Ry4PKfyBq4h4J1nzI_lcM/edit?usp=sharing)
@@ -94,4 +94,5 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
 * Group presentation will use Google Slides to visualize the wine data in an easy to understand format, we will add the link to our html site so the the webpage can be easily referenced during the presentation. 
 * Interactive elements will include being able to discover wines based on type, location, price, and ratings.
 
+<img width="1371" alt="Screen Shot 2022-11-08 at 7 35 03 PM" src="https://user-images.githubusercontent.com/106033535/201481108-d25ca082-aeaa-44e1-8490-5d688245badd.png">
 
