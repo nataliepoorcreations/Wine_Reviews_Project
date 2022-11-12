@@ -2,15 +2,17 @@
 # Wine_Reviews_Project
 ![grape-and-wine](https://user-images.githubusercontent.com/106033535/198412216-7ff44c76-a60a-423e-9086-b76989293e3d.jpeg)
 
-
-* Repository - Natalie
-* Machine Learning - Mary Cate
-* Database - Maria
-* Technology - Niki
+## Team Members-Roles
+* Repository and Presentation - [Natalie](https://github.com/nataliepoorcreations)
+* Machine Learning - [Mary Cate](https://github.com/MCRobish)
+* Database - [Maria](https://github.com/Mparra14)
+* Technology - [Niki](https://github.com/NikiNoel)
 
 ## Presentation
-Beginning phase of presentation:
-https://docs.google.com/presentation/d/14j0dBZNphSkz41oo3Oreq9Ry4PKfyBq4h4J1nzI_lcM/edit?usp=sharing
+Download presentation: [Google Slide Presentation](https://docs.google.com/presentation/d/14j0dBZNphSkz41oo3Oreq9Ry4PKfyBq4h4J1nzI_lcM/edit?usp=sharing)
+
+Download Tableau: [Tableau](https://public.tableau.com/app/profile/nicole.phillips8398/viz/Wine_Reviews_16678657358970/WorldMap?publish=yes)
+
 
 ## Communication Protocol
 We have been comminicating regularly on Slack and weekend group zooms to collaborate. 
@@ -61,21 +63,36 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
 
 
 ## Database Module
-* Sample data that mimics the expected final database structure or schema
-* Draft machine learning module is connected to the provisional database
-* Data will be cleaned into a database that will display the inforamtion in an easy to read format. 
-* Using webscraping to gather data from Vinio.com for additional wine data.
+* In order to organize our database, and ERD model was create to better visualize our final database. We had to establish which columns were necessary, and what other data could be ommitted for the purpose of our project in order to create our new filtered database. The outline of our database is seen in the picture below.
 
+<img width="481" alt="Screen Shot 2022-10-28 at 7 03 26 PM" src="https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/main/QuickDBD-export%20(1).png">
 
-<img width="481" alt="Screen Shot 2022-10-28 at 7 03 26 PM" src="https://user-images.githubusercontent.com/106033535/198748628-fb7c796e-9abb-4d47-a3bb-b828e2f68ceb.png">
+* For the connection string SQLAlchemy was used to connect to postgres. The data was cleaned by removing unnecessary columns and making sure we had no null values in our data, this was done before it was loaded into postgress. The process can be seen below and this can also be fully seen in the file named wine_sqlalchemy.ipynb.
+  * This connection created two databases that will be joined using SQL. 
 
+    Cleaning Data Process
+    ![cleaning_data_1](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/clean_data_1.png)
+    ![cleaning_data_2](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/clean_data_2.png)
+
+    Connection String
+    ![connection](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/connection_string.png)
+
+    Wine Database 
+    ![wine_db](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/wine_db.png)
+
+* For our joined database, a SQL query was used to create this new database which would link the wine name from the JSON file to our wine database. This can be seen in the query below along with the joined database. For a better visual please see joined_db.csv.zip file.
+
+     SQL Query
+     ![sql](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/Join_sql.png)
+
+     Joined Database Output
+     ![joined_db](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/JOINED_DB.png)
 
 ## Dashboard
 * Using JavaScript to display information in an eye pleasing and user friendly HTML page. 
 * Using Tableau to create visualizations for the wine data. 
 * Group presentation will use Google Slides to visualize the wine data in an easy to understand format, we will add the link to our html site so the the webpage can be easily referenced during the presentation. 
 * Interactive elements will include being able to discover wines based on type, location, price, and ratings.
-
 
 <img width="1371" alt="Screen Shot 2022-11-08 at 7 35 03 PM" src="https://user-images.githubusercontent.com/106033535/201481108-d25ca082-aeaa-44e1-8490-5d688245badd.png">
 
