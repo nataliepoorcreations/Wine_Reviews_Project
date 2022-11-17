@@ -60,6 +60,15 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
 
 ![image](https://user-images.githubusercontent.com/105991478/200197020-e75cf7d8-6dcb-4730-b1e1-7c445b6d561e.png)
 
+* **Grouping based on wine quality**
+
+<img width="484" alt="Screen Shot 2022-11-16 at 8 08 36 PM" src="https://user-images.githubusercontent.com/106033535/202329241-ca90a41f-13aa-459b-bd60-8e3e112610f8.png">
+
+## Webscraping from vivino.com
+<img width="807" alt="Screen Shot 2022-11-16 at 8 11 11 PM" src="https://user-images.githubusercontent.com/106033535/202329707-099c0b64-f4fe-40b6-9ca4-1689d007ae5f.png">
+<img width="585" alt="Screen Shot 2022-11-16 at 8 11 38 PM" src="https://user-images.githubusercontent.com/106033535/202329726-08ac860d-0b31-47a9-92e3-61da01fbda8c.png">
+
+
 
 ## Database Module
 * In order to organize our database, and ERD model was create to better visualize our final database. We had to establish which columns were necessary, and what other data could be ommitted for the purpose of our project in order to create our new filtered database. The outline of our database is seen in the picture below.
