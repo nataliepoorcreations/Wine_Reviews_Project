@@ -48,6 +48,8 @@ In this model, the goal is to predict the quality rating based on the factors gi
 ![image](https://user-images.githubusercontent.com/105991478/200196692-97b64a30-d00a-4c13-9845-16c9ebbc4456.png)
 
 After running the model to attempt to predict the quality rating, the accuracy score was too low because there is not a large enough difference between individual point values. Because of this, the model was re-run to predict whether the wine was in the "average" category (80-90) or the "excellent" category (90-100). The updated dataframe is show here: 
+![image](https://user-images.githubusercontent.com/105991478/202924474-b6e590e3-43eb-417f-9c3d-efd54b275a7f.png)
+
 
 * **Split Data into Training and Testing:**
 
@@ -62,6 +64,23 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
 ![image](https://user-images.githubusercontent.com/105991478/200197020-e75cf7d8-6dcb-4730-b1e1-7c445b6d561e.png)
 
 We additionally attempted a logistic regression model to predict the points value, but this also had an accuracy score below 20%. The problem with this model was similar to the Balanced Random Forest Classifier because there is not enough granularity between individual point values. 
+
+It seemed more important to the end consumer that they were selecting a category of wine specifically rather than the specific quality rating. so it was decided to break the wines out into two categories: "average" quality wine with scores from 80-90 and "excellent" wine with scores from 90-100. We again tried the Balanced Random Forest Classifier model and received much better results. 
+
+* **Model Results**
+When using the bins for the wines, the accuracy was significantly better. The balanced accuracy score was: 80.4% and the confusion matrix is shown below: 
+![image](https://user-images.githubusercontent.com/105991478/202924616-4a229620-fe22-4465-a9bd-0414b265377b.png)
+
+The precision scores for the average wine category were higher than the excellent wines. This is potentially because of the difference in dataset size- there were significantly more wines in the quality category of 80-90 than 90-100. Future efforts could try a larger dataset to balance the results a bit better. 
+
+![image](https://user-images.githubusercontent.com/105991478/202924670-a36419ba-b59b-4a79-80ed-10a500f2c3e1.png)
+
+The model also help up against a secondary dataset that was pulled from a JSON and joined into the PostgreSQL database. Part of the data is shown below: 
+
+![image](https://user-images.githubusercontent.com/105991478/202924837-27796f58-5ad0-40ba-b66f-30f15b1f84e1.png)
+
+When the model was applied to this dataset, the accuracy score was 76.8% and the confusion matrix is shown below. This is very similar to the first model, showing that this tool can be used across different wine sources. 
+![image](https://user-images.githubusercontent.com/105991478/202924889-ba3de85d-283d-424c-8c18-05402df4c87c.png)
 
 ## Database Module
 * In order to organize our database, and ERD model was create to better visualize our final database. We had to establish which columns were necessary, and what other data could be ommitted for the purpose of our project in order to create our new filtered database. The outline of our database is seen in the picture below.
