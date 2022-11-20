@@ -75,6 +75,10 @@ The precision scores for the average wine category were higher than the excellen
 
 ![image](https://user-images.githubusercontent.com/105991478/202924670-a36419ba-b59b-4a79-80ed-10a500f2c3e1.png)
 
+The model showed that the highest predictor of quality was price and then keyword count. The variety of wine did not impact the quality scoring.T he country of origin also had insignificant impact. 
+
+![image](https://user-images.githubusercontent.com/105991478/202925031-d7b533dd-0387-4029-9882-31e5feadb025.png)
+
 The model also help up against a secondary dataset that was pulled from a JSON and joined into the PostgreSQL database. Part of the data is shown below: 
 
 ![image](https://user-images.githubusercontent.com/105991478/202924837-27796f58-5ad0-40ba-b66f-30f15b1f84e1.png)
