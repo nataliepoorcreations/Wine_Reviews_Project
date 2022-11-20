@@ -41,25 +41,27 @@ After removing those words using a for loop and the WordNetLemmantizer, a series
 
 ![image](https://user-images.githubusercontent.com/105991478/200196191-0e650e58-3d76-4d24-89de-cef6941d4ed4.png)
 
-* **Description of preliminary feature engineering and preliminary feature selection:**
+* **Description of feature engineering and preliminary feature selection:**
 
 In this model, the goal is to predict the quality rating based on the factors given in the dataset. Primarly the keyword count, the price, the country and the variety were included. The region and winery were excluded because there were too many unique values to develop patterns, and the conversion to integer values using _get dummies_ would have resulted in too large of a dataframe. The dataframe prior to using _get dummies_ to covert the country and variety columns is as follows: 
 
 ![image](https://user-images.githubusercontent.com/105991478/200196692-97b64a30-d00a-4c13-9845-16c9ebbc4456.png)
 
+After running the model to attempt to predict the quality rating, the accuracy score was too low because there is not a large enough difference between individual point values. Because of this, the model was re-run to predict whether the wine was in the "average" category (80-90) or the "excellent" category (90-100). The updated dataframe is show here: 
 
 * **Split Data into Training and Testing:**
 
-The y data set is the point information, which is what we are trying to predict. the X dataset are the keyword counts, price, country and wine variety converted into integer format. 
+The y data set was first set to the individual points value, which is what we are trying to predict. the X dataset are the keyword counts, price, country and wine variety converted into integer format. In the later model, the y dataset became the "average" or "excellent" categories. 
 
 ![image](https://user-images.githubusercontent.com/105991478/200196749-c30bcac9-bcb3-4349-92ac-b9e33bcb4a0a.png)
 
 * **Explanation of model choice**
 
-The first model selected is the Balanced Random Forest Classifier model. This model was selected because it serves the purpose for grouping better than a regression model. However, it appears that based on the imbalanced classification report, the precision is quite low. The model is also helpful to determine the important features. It appears that the price and keyword count have a larger impact than the variety of the wine. We will re-create this model without the variety variable as well as try a couple other grouping models to find a better fit. 
+The first model selected is the Balanced Random Forest Classifier model. This model was selected because it serves the purpose for grouping better than a regression model. However, it appears that based on the initial imbalanced classification report, the precision is quite low. This is likely because the difference between a quality rating of 1 point is fairly subjective (i.e. difference between 84 and 85). The model is also helpful to determine the important features. It appears that the price and keyword count have a larger impact than the variety of the wine. 
 
 ![image](https://user-images.githubusercontent.com/105991478/200197020-e75cf7d8-6dcb-4730-b1e1-7c445b6d561e.png)
 
+We additionally attempted a logistic regression model to predict the points value, but this also had an accuracy score below 20%. The problem with this model was similar to the Balanced Random Forest Classifier because there is not enough granularity between individual point values. 
 
 ## Database Module
 * In order to organize our database, and ERD model was create to better visualize our final database. We had to establish which columns were necessary, and what other data could be ommitted for the purpose of our project in order to create our new filtered database. The outline of our database is seen in the picture below.
