@@ -41,25 +41,52 @@ After removing those words using a for loop and the WordNetLemmantizer, a series
 
 ![image](https://user-images.githubusercontent.com/105991478/200196191-0e650e58-3d76-4d24-89de-cef6941d4ed4.png)
 
-* **Description of preliminary feature engineering and preliminary feature selection:**
+* **Description of feature engineering and preliminary feature selection:**
 
 In this model, the goal is to predict the quality rating based on the factors given in the dataset. Primarly the keyword count, the price, the country and the variety were included. The region and winery were excluded because there were too many unique values to develop patterns, and the conversion to integer values using _get dummies_ would have resulted in too large of a dataframe. The dataframe prior to using _get dummies_ to covert the country and variety columns is as follows: 
 
 ![image](https://user-images.githubusercontent.com/105991478/200196692-97b64a30-d00a-4c13-9845-16c9ebbc4456.png)
 
+After running the model to attempt to predict the quality rating, the accuracy score was too low because there is not a large enough difference between individual point values. Because of this, the model was re-run to predict whether the wine was in the "average" category (80-90) or the "excellent" category (90-100). The updated dataframe is show here: 
+![image](https://user-images.githubusercontent.com/105991478/202924474-b6e590e3-43eb-417f-9c3d-efd54b275a7f.png)
+
 
 * **Split Data into Training and Testing:**
 
-The y data set is the point information, which is what we are trying to predict. the X dataset are the keyword counts, price, country and wine variety converted into integer format. 
+The y data set was first set to the individual points value, which is what we are trying to predict. the X dataset are the keyword counts, price, country and wine variety converted into integer format. In the later model, the y dataset became the "average" or "excellent" categories. 
 
 ![image](https://user-images.githubusercontent.com/105991478/200196749-c30bcac9-bcb3-4349-92ac-b9e33bcb4a0a.png)
 
 * **Explanation of model choice**
 
-The first model selected is the Balanced Random Forest Classifier model. This model was selected because it serves the purpose for grouping better than a regression model. However, it appears that based on the imbalanced classification report, the precision is quite low. The model is also helpful to determine the important features. It appears that the price and keyword count have a larger impact than the variety of the wine. We will re-create this model without the variety variable as well as try a couple other grouping models to find a better fit. 
+The first model selected is the Balanced Random Forest Classifier model. This model was selected because it serves the purpose for grouping better than a regression model. However, it appears that based on the initial imbalanced classification report, the precision is quite low. This is likely because the difference between a quality rating of 1 point is fairly subjective (i.e. difference between 84 and 85). The model is also helpful to determine the important features. It appears that the price and keyword count have a larger impact than the variety of the wine. 
 
 ![image](https://user-images.githubusercontent.com/105991478/200197020-e75cf7d8-6dcb-4730-b1e1-7c445b6d561e.png)
 
+
+We additionally attempted a logistic regression model to predict the points value, but this also had an accuracy score below 20%. The problem with this model was similar to the Balanced Random Forest Classifier because there is not enough granularity between individual point values. 
+
+It seemed more important to the end consumer that they were selecting a category of wine specifically rather than the specific quality rating. so it was decided to break the wines out into two categories: "average" quality wine with scores from 80-90 and "excellent" wine with scores from 90-100. We again tried the Balanced Random Forest Classifier model and received much better results. 
+
+* **Model Results**
+When using the bins for the wines, the accuracy was significantly better. The balanced accuracy score was: 80.4% and the confusion matrix is shown below: 
+![image](https://user-images.githubusercontent.com/105991478/202924616-4a229620-fe22-4465-a9bd-0414b265377b.png)
+
+The precision scores for the average wine category were higher than the excellent wines. This is potentially because of the difference in dataset size- there were significantly more wines in the quality category of 80-90 than 90-100. Future efforts could try a larger dataset to balance the results a bit better. 
+
+![image](https://user-images.githubusercontent.com/105991478/202924670-a36419ba-b59b-4a79-80ed-10a500f2c3e1.png)
+
+The model showed that the highest predictor of quality was price and then keyword count. The variety of wine did not impact the quality scoring.T he country of origin also had insignificant impact. 
+
+![image](https://user-images.githubusercontent.com/105991478/202925031-d7b533dd-0387-4029-9882-31e5feadb025.png)
+
+The model also help up against a secondary dataset that was pulled from a JSON and joined into the PostgreSQL database. Part of the data is shown below: 
+
+![image](https://user-images.githubusercontent.com/105991478/202924837-27796f58-5ad0-40ba-b66f-30f15b1f84e1.png)
+
+When the model was applied to this dataset, the accuracy score was 76.8% and the confusion matrix is shown below. This is very similar to the first model, showing that this tool can be used across different wine sources. 
+![image](https://user-images.githubusercontent.com/105991478/202924889-ba3de85d-283d-424c-8c18-05402df4c87c.png)
+=======
 * **Grouping based on wine quality**
 
 <img width="484" alt="Screen Shot 2022-11-16 at 8 08 36 PM" src="https://user-images.githubusercontent.com/106033535/202329241-ca90a41f-13aa-459b-bd60-8e3e112610f8.png">
