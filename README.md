@@ -48,6 +48,7 @@ In this model, the goal is to predict the quality rating based on the factors gi
 ![image](https://user-images.githubusercontent.com/105991478/200196692-97b64a30-d00a-4c13-9845-16c9ebbc4456.png)
 
 After running the model to attempt to predict the quality rating, the accuracy score was too low because there is not a large enough difference between individual point values. Because of this, the model was re-run to predict whether the wine was in the "average" category (80-90) or the "excellent" category (90-100). The updated dataframe is show here: 
+
 ![image](https://user-images.githubusercontent.com/105991478/202924474-b6e590e3-43eb-417f-9c3d-efd54b275a7f.png)
 
 
@@ -70,6 +71,7 @@ It seemed more important to the end consumer that they were selecting a category
 
 * **Model Results**
 When using the bins for the wines, the accuracy was significantly better. The balanced accuracy score was: 80.4% and the confusion matrix is shown below: 
+
 ![image](https://user-images.githubusercontent.com/105991478/202924616-4a229620-fe22-4465-a9bd-0414b265377b.png)
 
 The precision scores for the average wine category were higher than the excellent wines. This is potentially because of the difference in dataset size- there were significantly more wines in the quality category of 80-90 than 90-100. Future efforts could try a larger dataset to balance the results a bit better. 
@@ -85,13 +87,16 @@ The model also help up against a secondary dataset that was pulled from a JSON a
 ![image](https://user-images.githubusercontent.com/105991478/202924837-27796f58-5ad0-40ba-b66f-30f15b1f84e1.png)
 
 When the model was applied to this dataset, the accuracy score was 76.8% and the confusion matrix is shown below. This is very similar to the first model, showing that this tool can be used across different wine sources. 
+
 ![image](https://user-images.githubusercontent.com/105991478/202924889-ba3de85d-283d-424c-8c18-05402df4c87c.png)
-=======
+
+
 * **Grouping based on wine quality**
 
 <img width="484" alt="Screen Shot 2022-11-16 at 8 08 36 PM" src="https://user-images.githubusercontent.com/106033535/202329241-ca90a41f-13aa-459b-bd60-8e3e112610f8.png">
 
 ## Webscraping from vivino.com
+
 <img width="807" alt="Screen Shot 2022-11-16 at 8 11 11 PM" src="https://user-images.githubusercontent.com/106033535/202329707-099c0b64-f4fe-40b6-9ca4-1689d007ae5f.png">
 <img width="585" alt="Screen Shot 2022-11-16 at 8 11 38 PM" src="https://user-images.githubusercontent.com/106033535/202329726-08ac860d-0b31-47a9-92e3-61da01fbda8c.png">
 
@@ -103,6 +108,7 @@ When the model was applied to this dataset, the accuracy score was 76.8% and the
 <img width="481" alt="Screen Shot 2022-10-28 at 7 03 26 PM" src="https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/main/QuickDBD-export%20(1).png">
 
 * For the connection string SQLAlchemy was used to connect to postgres. The data was cleaned by removing unnecessary columns and making sure we had no null values in our data, this was done before it was loaded into postgress. The process can be seen below and this can also be fully seen in the file named wine_sqlalchemy.ipynb.
+
   * This connection created two databases that will be joined using SQL. 
 
     Cleaning Data Process
@@ -118,10 +124,13 @@ When the model was applied to this dataset, the accuracy score was 76.8% and the
 * For our joined database, a SQL query was used to create this new database which would link the wine name from the JSON file to our wine database. This can be seen in the query below along with the joined database. For a better visual please see joined_db.csv.zip file.
 
      SQL Query
+     
      ![sql](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/Join_sql.png)
 
      Joined Database Output
+     
      ![joined_db](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/JOINED_DB.png)
+
 
 ## Dashboard
  
