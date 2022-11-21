@@ -10,7 +10,7 @@
 ## Presentation
 Download presentation: [Google Slide Presentation](https://docs.google.com/presentation/d/14j0dBZNphSkz41oo3Oreq9Ry4PKfyBq4h4J1nzI_lcM/edit?usp=sharing)
 
-Download Tableau: [Tableau](https://public.tableau.com/app/profile/nicole.phillips8398/viz/Wine_Reviews_16678657358970/WorldMap?publish=yes)
+Download Tableau: [Tableau](https://public.tableau.com/app/profile/nicole.phillips8398/viz/Wine_Review_16687292849810/Top10byVarietal)
 
 
 ## Communication Protocol
@@ -63,6 +63,7 @@ The first model selected is the Balanced Random Forest Classifier model. This mo
 
 ![image](https://user-images.githubusercontent.com/105991478/200197020-e75cf7d8-6dcb-4730-b1e1-7c445b6d561e.png)
 
+
 We additionally attempted a logistic regression model to predict the points value, but this also had an accuracy score below 20%. The problem with this model was similar to the Balanced Random Forest Classifier because there is not enough granularity between individual point values. 
 
 It seemed more important to the end consumer that they were selecting a category of wine specifically rather than the specific quality rating. so it was decided to break the wines out into two categories: "average" quality wine with scores from 80-90 and "excellent" wine with scores from 90-100. We again tried the Balanced Random Forest Classifier model and received much better results. 
@@ -85,6 +86,16 @@ The model also help up against a secondary dataset that was pulled from a JSON a
 
 When the model was applied to this dataset, the accuracy score was 76.8% and the confusion matrix is shown below. This is very similar to the first model, showing that this tool can be used across different wine sources. 
 ![image](https://user-images.githubusercontent.com/105991478/202924889-ba3de85d-283d-424c-8c18-05402df4c87c.png)
+=======
+* **Grouping based on wine quality**
+
+<img width="484" alt="Screen Shot 2022-11-16 at 8 08 36 PM" src="https://user-images.githubusercontent.com/106033535/202329241-ca90a41f-13aa-459b-bd60-8e3e112610f8.png">
+
+## Webscraping from vivino.com
+<img width="807" alt="Screen Shot 2022-11-16 at 8 11 11 PM" src="https://user-images.githubusercontent.com/106033535/202329707-099c0b64-f4fe-40b6-9ca4-1689d007ae5f.png">
+<img width="585" alt="Screen Shot 2022-11-16 at 8 11 38 PM" src="https://user-images.githubusercontent.com/106033535/202329726-08ac860d-0b31-47a9-92e3-61da01fbda8c.png">
+
+
 
 ## Database Module
 * In order to organize our database, and ERD model was create to better visualize our final database. We had to establish which columns were necessary, and what other data could be ommitted for the purpose of our project in order to create our new filtered database. The outline of our database is seen in the picture below.
@@ -113,10 +124,12 @@ When the model was applied to this dataset, the accuracy score was 76.8% and the
      ![joined_db](https://github.com/nataliepoorcreations/Wine_Reviews_Project/blob/Maria_Database/photos/JOINED_DB.png)
 
 ## Dashboard
-* Using JavaScript to display information in an eye pleasing and user friendly HTML page. 
+ 
 * Using Tableau to create visualizations for the wine data. 
 * Group presentation will use Google Slides to visualize the wine data in an easy to understand format, we will add the link to our html site so the the webpage can be easily referenced during the presentation. 
 * Interactive elements will include being able to discover wines based on type, location, price, and ratings.
 
 <img width="1371" alt="Screen Shot 2022-11-08 at 7 35 03 PM" src="https://user-images.githubusercontent.com/106033535/201481108-d25ca082-aeaa-44e1-8490-5d688245badd.png">
+<img width="1333" alt="Screen Shot 2022-11-17 at 7 37 57 PM" src="https://user-images.githubusercontent.com/106033535/202592156-6403b9cd-4d98-4861-9ac6-3f2384474d14.png">
+<img width="1328" alt="Screen Shot 2022-11-17 at 7 38 14 PM" src="https://user-images.githubusercontent.com/106033535/202592186-44ad841a-6014-451a-ade4-3f5803b3c9a7.png">
 
