@@ -10,7 +10,7 @@
 ## Presentation
 Download presentation: [Google Slide Presentation](https://docs.google.com/presentation/d/14j0dBZNphSkz41oo3Oreq9Ry4PKfyBq4h4J1nzI_lcM/edit?usp=sharing)
 
-Download Tableau: [Tableau](https://public.tableau.com/app/profile/nicole.phillips8398/viz/Wine_Review_16687292849810/Top10byVarietal)
+Download Tableau: [Tableau]([https://public.tableau.com/app/profile/nicole.phillips8398/viz/Wine_Review_16687292849810/Top10byVarietal](https://public.tableau.com/app/profile/nicole.phillips8398/viz/Wine_Reviews_1121/WineReview))
 
 
 ## Communication Protocol
@@ -139,6 +139,7 @@ When the model was applied to this dataset, the accuracy score was 76.8% and the
 * Interactive elements will include being able to discover wines based on type, location, price, and ratings.
 
 <img width="1371" alt="Screen Shot 2022-11-08 at 7 35 03 PM" src="https://user-images.githubusercontent.com/106033535/201481108-d25ca082-aeaa-44e1-8490-5d688245badd.png">
-<img width="1333" alt="Screen Shot 2022-11-17 at 7 37 57 PM" src="https://user-images.githubusercontent.com/106033535/202592156-6403b9cd-4d98-4861-9ac6-3f2384474d14.png">
-<img width="1328" alt="Screen Shot 2022-11-17 at 7 38 14 PM" src="https://user-images.githubusercontent.com/106033535/202592186-44ad841a-6014-451a-ade4-3f5803b3c9a7.png">
 
+<img width="1325" alt="Screen Shot 2022-11-22 at 5 21 45 PM" src="https://user-images.githubusercontent.com/106033535/203433508-73a61486-ba01-429a-904a-80d2e25c175c.png">
+
+<img width="1300" alt="Screen Shot 2022-11-22 at 5 22 01 PM" src="https://user-images.githubusercontent.com/106033535/203433519-0eff933e-bd2f-4467-931f-3294da05d6a3.png">
